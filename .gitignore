@@ -1,0 +1,10 @@
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+verification/*.xcresult/
+verification/*.log
+# Duplicate project package created externally during initial generation.
+DontForgetMe 2.xcodeproj/
+verification/screenshots/

@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D7B89BA06A6A197DE79F8A2 /* StayDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133DF48553FE45F80374F55E /* StayDetector.swift */; };
+		50DFCF2BB7080BC05EB124AD /* DontForgetMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858B667B453433D38F3C039 /* DontForgetMeApp.swift */; };
+		52371B98ECF8F350D76EDB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66D2D538087BE293FE0C1CF /* Assets.xcassets */; };
+		540207EDAE786226B35FB276 /* StayDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7B4A242D077BE10EA15AC /* StayDetectorTests.swift */; };
+		63737A4DCC2079F60DD85164 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DB26E6B98836C2EC9204F409 /* PrivacyInfo.xcprivacy */; };
+		7B9E926957A76C416A62025D /* JourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14A6B86F692B0D5C8F3163 /* JourneyTests.swift */; };
+		9433A4D853DEB1E3220355AE /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00C91D1B1773D49F6104E2C /* AppModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F617E0D859656CFD9F5D14A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF60E9B7AF038B704B20B0C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF87087473694F480975AEE;
+			remoteInfo = DontForgetMe;
+		};
+		AEE59AC3A6D4C55CF6E66D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF60E9B7AF038B704B20B0C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF87087473694F480975AEE;
+			remoteInfo = DontForgetMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		133DF48553FE45F80374F55E /* StayDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayDetector.swift; sourceTree = "<group>"; };
+		6719FC3756376BD01CA7636A /* DontForgetMeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DontForgetMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA14A6B86F692B0D5C8F3163 /* JourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyTests.swift; sourceTree = "<group>"; };
+		C43A454C333B85AEA7D3C563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C66D2D538087BE293FE0C1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C858B667B453433D38F3C039 /* DontForgetMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontForgetMeApp.swift; sourceTree = "<group>"; };
+		DB26E6B98836C2EC9204F409 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E0EB29E92B9E72B9967612E3 /* DontForgetMeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DontForgetMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D7B4A242D077BE10EA15AC /* StayDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayDetectorTests.swift; sourceTree = "<group>"; };
+		F00C91D1B1773D49F6104E2C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		FC8A3EEEC04D0A862551DB57 /* DontForgetMe.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DontForgetMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6E4819D0C87AE23DF9F7C4BF /* DontForgetMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA14A6B86F692B0D5C8F3163 /* JourneyTests.swift */,
+			);
+			path = DontForgetMeUITests;
+			sourceTree = "<group>";
+		};
+		9613F89BBE4EC2D3170F9311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC8A3EEEC04D0A862551DB57 /* DontForgetMe.app */,
+				6719FC3756376BD01CA7636A /* DontForgetMeTests.xctest */,
+				E0EB29E92B9E72B9967612E3 /* DontForgetMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C256BD1C75E9A4B51B5F2F0F /* DontForgetMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6D7B4A242D077BE10EA15AC /* StayDetectorTests.swift */,
+			);
+			path = DontForgetMeTests;
+			sourceTree = "<group>";
+		};
+		E7DA30C35435FA737259F7CD = {
+			isa = PBXGroup;
+			children = (
+				FA0F3D9834620D7D22DE655D /* DontForgetMe */,
+				C256BD1C75E9A4B51B5F2F0F /* DontForgetMeTests */,
+				6E4819D0C87AE23DF9F7C4BF /* DontForgetMeUITests */,
+				9613F89BBE4EC2D3170F9311 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA0F3D9834620D7D22DE655D /* DontForgetMe */ = {
+			isa = PBXGroup;
+			children = (
+				F00C91D1B1773D49F6104E2C /* AppModel.swift */,
+				C66D2D538087BE293FE0C1CF /* Assets.xcassets */,
+				C858B667B453433D38F3C039 /* DontForgetMeApp.swift */,
+				C43A454C333B85AEA7D3C563 /* Info.plist */,
+				DB26E6B98836C2EC9204F409 /* PrivacyInfo.xcprivacy */,
+				133DF48553FE45F80374F55E /* StayDetector.swift */,
+			);
+			path = DontForgetMe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EF87087473694F480975AEE /* DontForgetMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCD9F85D3166F9B455C3A0F /* Build configuration list for PBXNativeTarget "DontForgetMe" */;
+			buildPhases = (
+				1B21E0E2E6D5389505A15FC6 /* Sources */,
+				C8877996BB31AA47212863A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DontForgetMe;
+			packageProductDependencies = (
+			);
+			productName = DontForgetMe;
+			productReference = FC8A3EEEC04D0A862551DB57 /* DontForgetMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A369094A4CF664CF3FA20E14 /* DontForgetMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB07D1D6164C5E28D4A349D0 /* Build configuration list for PBXNativeTarget "DontForgetMeTests" */;
+			buildPhases = (
+				41C5E59D6BCB215AF0996905 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9FF9B7C162DF7CD93EA308D /* PBXTargetDependency */,
+			);
+			name = DontForgetMeTests;
+			packageProductDependencies = (
+			);
+			productName = DontForgetMeTests;
+			productReference = 6719FC3756376BD01CA7636A /* DontForgetMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8079FCAE9E3172B98D0BB28 /* DontForgetMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAE6CD111B38588154081C6 /* Build configuration list for PBXNativeTarget "DontForgetMeUITests" */;
+			buildPhases = (
+				BD62620A6D2262F6AC34AE8F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87CBB22D5C977A1588D281CA /* PBXTargetDependency */,
+			);
+			name = DontForgetMeUITests;
+			packageProductDependencies = (
+			);
+			productName = DontForgetMeUITests;
+			productReference = E0EB29E92B9E72B9967612E3 /* DontForgetMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF60E9B7AF038B704B20B0C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5EF87087473694F480975AEE = {
+						ProvisioningStyle = Automatic;
+					};
+					A369094A4CF664CF3FA20E14 = {
+						ProvisioningStyle = Automatic;
+					};
+					C8079FCAE9E3172B98D0BB28 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5EF87087473694F480975AEE;
+					};
+				};
+			};
+			buildConfigurationList = F4F86FD7445907BE5AAE6D05 /* Build configuration list for PBXProject "DontForgetMe" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E7DA30C35435FA737259F7CD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9613F89BBE4EC2D3170F9311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EF87087473694F480975AEE /* DontForgetMe */,
+				A369094A4CF664CF3FA20E14 /* DontForgetMeTests */,
+				C8079FCAE9E3172B98D0BB28 /* DontForgetMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8877996BB31AA47212863A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52371B98ECF8F350D76EDB93 /* Assets.xcassets in Resources */,
+				63737A4DCC2079F60DD85164 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B21E0E2E6D5389505A15FC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9433A4D853DEB1E3220355AE /* AppModel.swift in Sources */,
+				50DFCF2BB7080BC05EB124AD /* DontForgetMeApp.swift in Sources */,
+				3D7B89BA06A6A197DE79F8A2 /* StayDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41C5E59D6BCB215AF0996905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540207EDAE786226B35FB276 /* StayDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD62620A6D2262F6AC34AE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9E926957A76C416A62025D /* JourneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87CBB22D5C977A1588D281CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EF87087473694F480975AEE /* DontForgetMe */;
+			targetProxy = 7F617E0D859656CFD9F5D14A /* PBXContainerItemProxy */;
+		};
+		F9FF9B7C162DF7CD93EA308D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EF87087473694F480975AEE /* DontForgetMe */;
+			targetProxy = AEE59AC3A6D4C55CF6E66D8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1920438E9F5760E630EDE865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1CE1F0904E3260FE7597A1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DontForgetMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.dontforgetme;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43E09777E8C6DA28AC8C33D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.DontForgetMeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DontForgetMe;
+			};
+			name = Debug;
+		};
+		9464401A35306146E3EF74C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DontForgetMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.dontforgetme;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A54F783CDBA91AC9A802CF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.DontForgetMeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DontForgetMe.app/DontForgetMe";
+			};
+			name = Release;
+		};
+		D1C95F1F02D2A6FF8237AA7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E1DCF44FDA68579C45AB9E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.DontForgetMeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DontForgetMe;
+			};
+			name = Release;
+		};
+		E549F2325AF5DE2401009115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.DontForgetMeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DontForgetMe.app/DontForgetMe";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BCD9F85D3166F9B455C3A0F /* Build configuration list for PBXNativeTarget "DontForgetMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE1F0904E3260FE7597A1A0 /* Debug */,
+				9464401A35306146E3EF74C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BDAE6CD111B38588154081C6 /* Build configuration list for PBXNativeTarget "DontForgetMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E09777E8C6DA28AC8C33D2 /* Debug */,
+				E1DCF44FDA68579C45AB9E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F4F86FD7445907BE5AAE6D05 /* Build configuration list for PBXProject "DontForgetMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1920438E9F5760E630EDE865 /* Debug */,
+				D1C95F1F02D2A6FF8237AA7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB07D1D6164C5E28D4A349D0 /* Build configuration list for PBXNativeTarget "DontForgetMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E549F2325AF5DE2401009115 /* Debug */,
+				A54F783CDBA91AC9A802CF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF60E9B7AF038B704B20B0C8 /* Project object */;
+}
