@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "Don't Forget Me";
+"NSLocationWhenInUseUsageDescription" = "Find when you settle somewhere, so we can remind you to take your things when you leave.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Remind you to take your things when you leave a place, even with your phone locked.";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1DC9CAF80FEE9D28AA5FFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE765086C7A773B23F14AA26 /* Localizable.strings */; };
 		3D7B89BA06A6A197DE79F8A2 /* StayDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133DF48553FE45F80374F55E /* StayDetector.swift */; };
 		50DFCF2BB7080BC05EB124AD /* DontForgetMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858B667B453433D38F3C039 /* DontForgetMeApp.swift */; };
 		52371B98ECF8F350D76EDB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66D2D538087BE293FE0C1CF /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		63737A4DCC2079F60DD85164 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DB26E6B98836C2EC9204F409 /* PrivacyInfo.xcprivacy */; };
 		7B9E926957A76C416A62025D /* JourneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA14A6B86F692B0D5C8F3163 /* JourneyTests.swift */; };
 		9433A4D853DEB1E3220355AE /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00C91D1B1773D49F6104E2C /* AppModel.swift */; };
+		9BB9E3115447B526DCB3693F /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347246C60BE857D46DC3A55C /* Localization.swift */; };
+		A29FFB05642E0E717B023050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E898C40826143F6AE886F3C /* InfoPlist.strings */; };
+		F2B423DA340EC9EBBCE48E10 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EEA2392AF4176E85CD2C99 /* LocalizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,17 @@
 
 /* Begin PBXFileReference section */
 		133DF48553FE45F80374F55E /* StayDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayDetector.swift; sourceTree = "<group>"; };
+		1B6255AFF5336CDF0BEFBD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2D479DF20B59F4C986B94AAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		347246C60BE857D46DC3A55C /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		59EEA2392AF4176E85CD2C99 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		6719FC3756376BD01CA7636A /* DontForgetMeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DontForgetMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B193F7A97A3296FF5616251C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		BA14A6B86F692B0D5C8F3163 /* JourneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyTests.swift; sourceTree = "<group>"; };
 		C43A454C333B85AEA7D3C563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C66D2D538087BE293FE0C1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C858B667B453433D38F3C039 /* DontForgetMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontForgetMeApp.swift; sourceTree = "<group>"; };
+		CED092CADD147C3E25101400 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DB26E6B98836C2EC9204F409 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		E0EB29E92B9E72B9967612E3 /* DontForgetMeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DontForgetMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D7B4A242D077BE10EA15AC /* StayDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayDetectorTests.swift; sourceTree = "<group>"; };
@@ -69,6 +79,7 @@
 		C256BD1C75E9A4B51B5F2F0F /* DontForgetMeTests */ = {
 			isa = PBXGroup;
 			children = (
+				59EEA2392AF4176E85CD2C99 /* LocalizationTests.swift */,
 				E6D7B4A242D077BE10EA15AC /* StayDetectorTests.swift */,
 			);
 			path = DontForgetMeTests;
@@ -91,8 +102,11 @@
 				C66D2D538087BE293FE0C1CF /* Assets.xcassets */,
 				C858B667B453433D38F3C039 /* DontForgetMeApp.swift */,
 				C43A454C333B85AEA7D3C563 /* Info.plist */,
+				347246C60BE857D46DC3A55C /* Localization.swift */,
 				DB26E6B98836C2EC9204F409 /* PrivacyInfo.xcprivacy */,
 				133DF48553FE45F80374F55E /* StayDetector.swift */,
+				2E898C40826143F6AE886F3C /* InfoPlist.strings */,
+				AE765086C7A773B23F14AA26 /* Localizable.strings */,
 			);
 			path = DontForgetMe;
 			sourceTree = "<group>";
@@ -181,6 +195,7 @@
 			knownRegions = (
 				Base,
 				en,
+				"zh-Hant",
 			);
 			mainGroup = E7DA30C35435FA737259F7CD;
 			minimizedProjectReferenceProxies = 1;
@@ -202,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52371B98ECF8F350D76EDB93 /* Assets.xcassets in Resources */,
+				A29FFB05642E0E717B023050 /* InfoPlist.strings in Resources */,
+				2A1DC9CAF80FEE9D28AA5FFD /* Localizable.strings in Resources */,
 				63737A4DCC2079F60DD85164 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +232,7 @@
 			files = (
 				9433A4D853DEB1E3220355AE /* AppModel.swift in Sources */,
 				50DFCF2BB7080BC05EB124AD /* DontForgetMeApp.swift in Sources */,
+				9BB9E3115447B526DCB3693F /* Localization.swift in Sources */,
 				3D7B89BA06A6A197DE79F8A2 /* StayDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B423DA340EC9EBBCE48E10 /* LocalizationTests.swift in Sources */,
 				540207EDAE786226B35FB276 /* StayDetectorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +268,27 @@
 			targetProxy = AEE59AC3A6D4C55CF6E66D8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E898C40826143F6AE886F3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B6255AFF5336CDF0BEFBD0E /* en */,
+				CED092CADD147C3E25101400 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE765086C7A773B23F14AA26 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D479DF20B59F4C986B94AAB /* en */,
+				B193F7A97A3296FF5616251C /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1920438E9F5760E630EDE865 /* Debug */ = {

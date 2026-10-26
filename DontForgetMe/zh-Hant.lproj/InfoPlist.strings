@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "別忘了帶我走";
+"NSLocationWhenInUseUsageDescription" = "偵測你何時停留在同一個地點，並在離開時提醒你帶齊物品。";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "即使手機已鎖定，也能在你離開停留的地點時，提醒你帶齊物品。";

@@ -1,5 +1,7 @@
 # Don’t Forget Me 🎒
 
+[繁體中文說明](README.zh-Hant.md) · Supports English and Traditional Chinese (zh-Hant). The app follows the iPhone language preference; choose Traditional Chinese in the app’s iOS Settings language option or Xcode scheme Run options.
+
 A native iOS app for that “did I leave something behind?” moment. Pip, an original backpack buddy, turns a departure reminder into a friendly packing checklist. SwiftUI, Core Location, and local notifications; no dependencies, account, or backend.
 
 ## Run

@@ -47,9 +47,11 @@ struct Belonging: Codable, Identifiable, Equatable {
     var name: String
     var symbol: String
     var enabled = true
-    static let defaults = [Belonging(name: "Student ID", symbol: "person.text.rectangle.fill"),
-                           Belonging(name: "Water bottle", symbol: "waterbottle.fill"),
-                           Belonging(name: "Keys", symbol: "key.fill")]
+    var localizationKey: String? = nil
+    var displayName: String { localizationKey.map { L10n.text($0) } ?? name }
+    static let defaults = [Belonging(name: "Student ID", symbol: "person.text.rectangle.fill", localizationKey: "item.studentID"),
+                           Belonging(name: "Water bottle", symbol: "waterbottle.fill", localizationKey: "item.waterBottle"),
+                           Belonging(name: "Keys", symbol: "key.fill", localizationKey: "item.keys")]
 }
 
 struct Reminder: Codable {
@@ -65,4 +67,17 @@ struct SavedState: Codable {
     var stay: Stay?
     var reminder: Reminder?
     var successfulChecks = 0
+
+    mutating func migrateLegacyDefaultNames() {
+        let templates = Belonging.defaults
+        guard items.count >= templates.count,
+              zip(items.prefix(3), templates).allSatisfy({ $0.name == $1.name && $0.symbol == $1.symbol }) else { return }
+        for index in 0..<3 {
+            let id = items[index].id
+            items[index].localizationKey = templates[index].localizationKey
+            if let reminderIndex = reminder?.items.firstIndex(where: { $0.id == id }) {
+                reminder?.items[reminderIndex].localizationKey = templates[index].localizationKey
+            }
+        }
+    }
 }

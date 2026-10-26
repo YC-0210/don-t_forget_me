@@ -12,6 +12,7 @@ final class AppModel: NSObject, ObservableObject, @preconcurrency CLLocationMana
     @Published var pendingCount = 0
     @Published var deliveredRepeatCount = 0
     @Published var repeatInterval = 0
+    @Published var deliveredReminderBody = ""
     let manager = CLLocationManager()
     let center = UNUserNotificationCenter.current()
     let defaults: UserDefaults
@@ -26,6 +27,8 @@ final class AppModel: NSObject, ObservableObject, @preconcurrency CLLocationMana
         if ProcessInfo.processInfo.arguments.contains("--reset") { defaults.removeObject(forKey: "state") }
         state = (defaults.data(forKey: "state").flatMap { try? JSONDecoder().decode(SavedState.self, from: $0) }) ?? SavedState()
         super.init()
+        state.migrateLegacyDefaultNames()
+        save()
         detector.stay = state.stay
         manager.delegate = self
         center.delegate = self
@@ -44,7 +47,7 @@ final class AppModel: NSObject, ObservableObject, @preconcurrency CLLocationMana
     func requestNotifications() async {
         if await center.notificationSettings().authorizationStatus == .denied { openSettings(); return }
         do { notificationAllowed = try await center.requestAuthorization(options: [.alert, .sound, .badge]) }
-        catch { issue = "Notifications couldn't be enabled. Try again in Settings." }
+        catch { issue = L10n.text("Notifications couldn't be enabled. Try again in Settings.") }
         if state.reminder != nil { await scheduleReminder() }
     }
     func requestLocation() {
@@ -130,10 +133,10 @@ final class AppModel: NSObject, ObservableObject, @preconcurrency CLLocationMana
         if left { beginReminder() }
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        if (error as? CLError)?.code != .locationUnknown { issue = "Location is unavailable. Check your location permissions and try again." }
+        if (error as? CLError)?.code != .locationUnknown { issue = L10n.text("Location is unavailable. Check your location permissions and try again.") }
     }
     func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
-        issue = "Place monitoring is unavailable. Location updates will still be used while available."
+        issue = L10n.text("Place monitoring is unavailable. Location updates will still be used while available.")
         regionID = nil
     }
     func beginReminder() {
@@ -149,8 +152,8 @@ final class AppModel: NSObject, ObservableObject, @preconcurrency CLLocationMana
         notificationRevision += 1
         let revision = notificationRevision
         let content = UNMutableNotificationContent()
-        content.title = "Wait! Got your things? 🎒"
-        content.body = reminder.items.map(\.name).joined(separator: ", ") + ". Open your checklist to stop reminders."
+        content.title = L10n.text("Wait! Got your things? 🎒")
+        content.body = L10n.format("%@. Open your checklist to stop reminders.", reminder.items.map(\.displayName).joined(separator: L10n.text(", ")))
         content.sound = .default
         content.badge = 1
         content.threadIdentifier = "belongings"
@@ -160,7 +163,7 @@ final class AppModel: NSObject, ObservableObject, @preconcurrency CLLocationMana
                 try await center.add(UNNotificationRequest(identifier: id, content: content, trigger: UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: repeats)))
                 if state.reminder == nil { center.removePendingNotificationRequests(withIdentifiers: Self.notificationIDs); return }
             }
-        } catch { issue = "Your checklist is ready, but notifications couldn't be scheduled. Enable them in Settings." }
+        } catch { issue = L10n.text("Your checklist is ready, but notifications couldn't be scheduled. Enable them in Settings.") }
         await refreshPending()
     }
     func toggleCheck(_ id: UUID) {
@@ -182,7 +185,9 @@ final class AppModel: NSObject, ObservableObject, @preconcurrency CLLocationMana
         pendingCount = requests.count
         let trigger = requests.first { $0.identifier == "belongings-repeat" }?.trigger as? UNTimeIntervalNotificationTrigger
         repeatInterval = trigger?.repeats == true ? Int(trigger!.timeInterval) : 0
-        deliveredRepeatCount = await center.deliveredNotifications().filter { $0.request.identifier == "belongings-repeat" }.count
+        let delivered = await center.deliveredNotifications().filter { $0.request.identifier == "belongings-repeat" }
+        deliveredRepeatCount = delivered.count
+        deliveredReminderBody = delivered.first?.request.content.body ?? ""
     }
     nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions { [.banner, .sound, .badge] }
     nonisolated func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async { }
